@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+
+
+.toast {
+  position: fixed;
+  top: 20px; /* Adjust this value as needed */
+  right: 20px; /* Adjust this value as needed */
+  /* Customize the background color, border, and text color */
+  background-color: #333;
+  border: 2px solid #444;
+  color: #fff;
+
+  /* Padding and margin */
+  padding: 1rem;
+  margin: 10px;
+
+  /* Apply Tailwind CSS classes if needed */
+  @apply bg-red-500 border-red-600 text-white;
+}

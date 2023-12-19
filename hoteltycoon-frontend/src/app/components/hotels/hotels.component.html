@@ -1,0 +1,16 @@
+<div class="bg-white rounded-lg shadow overflow-hidden">
+  <table class="min-w-full">
+    <thead>
+    <tr>
+      <th class="py-2 px-4 bg-blue-500 text-white font-semibold uppercase">Hotel Name</th>
+      <th class="py-2 px-4 bg-blue-500 text-white font-semibold uppercase">Stars</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let hotel of hotels" (click)="navigateToHotelDetail(hotel.id)" class="cursor-pointer hover:bg-gray-100">
+      <td class="py-2 px-4">{{ hotel.name }}</td>
+      <td class="py-2 px-4">{{ hotel.stars }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

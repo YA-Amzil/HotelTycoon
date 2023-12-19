@@ -1,0 +1,12 @@
+
+<div class="bg-white p-6 mb-4 shadow-md rounded-lg">
+  <h2>{{ buildingplot.name }}</h2>
+  <p>Price: {{ buildingplot.price | currency }}</p>
+  <button *ngIf="!buildingplot.sold" (click)="buyLand()" class="btn btn-blue">Buy</button>
+
+  <!-- Hotel Name Dialog -->
+  <div *ngIf="buildingplot.sold">
+    <input [(ngModel)]="hotelName" placeholder="Enter Hotel Name">
+    <button (click)="createHotel()" class="btn btn-blue">Create</button>
+  </div>
+</div>

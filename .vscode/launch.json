@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-HoteltycoonBackendApplication<hoteltycoon>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "be.pxl.hotel.HoteltycoonBackendApplication",
+            "projectName": "hoteltycoon",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

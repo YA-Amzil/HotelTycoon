@@ -1,0 +1,5 @@
+<div class="land-dashboard">
+  <div *ngFor="let buildingplot of buildingplots">
+    <app-buildingplot-detail [buildingplot]="buildingplot" (childEvent)="handleChildEvent($event)"></app-buildingplot-detail>
+  </div>
+</div>

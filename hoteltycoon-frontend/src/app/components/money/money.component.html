@@ -1,0 +1,8 @@
+<div class="w-4/4 p-4 flex items-center justify-end">
+  <div class="money-icon text-green-600 mr-2">
+    <fa-icon [icon]="faMoneyBills"></fa-icon>
+  </div>
+  <div class="money-amount text-xl font-bold text-green-600">
+    {{ moneyAmount | currency: 'EUR' }}
+  </div>
+</div>
