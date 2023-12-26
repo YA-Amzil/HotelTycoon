@@ -163,12 +163,11 @@ public class Hotel {
     }
 
     public double getPriceFacilities() {
-        return facilities.stream().mapToDouble(Facility::getPrice).sum();
+        return facilities.stream().findFirst().map(Facility::getPrice).orElse(0.0);
     }
 
     public double getTotalCost() {
-        return buildingPlot.getPrice() + buildings.stream().mapToDouble(Building::getPrice).sum()
-                + getPriceFacilities();
+        return buildingPlot.getPrice() + getPriceFacilities();
     }
 
     @Override

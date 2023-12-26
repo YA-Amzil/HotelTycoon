@@ -22,7 +22,7 @@ public class BookingEngine {
     this.hotelService = hotelService;
   }
 
-  @Scheduled(fixedDelay = 10000)
+  @Scheduled(fixedDelay = 50)
   @Transactional(readOnly = true)
   public void createBooking() throws InterruptedException {
     List<Hotel> allHotels = hotelService.findAllOpenHotels();

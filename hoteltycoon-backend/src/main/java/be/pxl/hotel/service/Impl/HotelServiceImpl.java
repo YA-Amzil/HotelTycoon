@@ -148,7 +148,5 @@ public class HotelServiceImpl implements HotelService {
 				.orElseThrow(() -> new IllegalArgumentException("Hotel not found with id: " + hotelId + "!"));
 
 		hotel.addFacility(facility, bankService.getWallet());
-		var updateFacilities = hotelRepository.save(hotel);
-		hotelRepository.updateFacilities(updateFacilities.getId(), updateFacilities.getFacilities());
 	}
 }
