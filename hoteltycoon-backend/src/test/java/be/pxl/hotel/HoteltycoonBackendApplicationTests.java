@@ -24,6 +24,7 @@ import be.pxl.hotel.exception.InvalidBookingException;
 import be.pxl.hotel.exception.UnsufficientMoneyException;
 
 @SpringBootTest
+// Dit is een testklasse die de functionaliteit van de applicatie test
 class HoteltycoonBackendApplicationTests {
 
 	private Wallet wallet;
